@@ -22,3 +22,23 @@ function createCounter(n) {
 
 
 // ======================================
+//(easy) Write a function createHelloWorld. It should return a new function that always returns "Hello World".
+
+var createHelloWorld = function() {
+  return function(...args) {
+      return "Hello World"
+  }
+};
+
+// ============================================
+
+// 287. Find the Duplicate Number (middle)
+var findDuplicate = function(nums) {
+  let newArr = [nums[0]]
+  for(let i=1; i<nums.length; i++){
+      if(newArr.includes(nums[i])) return nums[i]
+      else newArr.push(nums[i])
+  }
+};
+
+// ===============================================
