@@ -8,3 +8,6 @@ Array.prototype.myMap = function (callback) {
   }
   return mapArray;
 };
+
+
+console.log('hi');
