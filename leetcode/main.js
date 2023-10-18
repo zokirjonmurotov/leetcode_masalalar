@@ -8,29 +8,7 @@ var createHelloWorld = function () {
   };
 };
 
-// ============================================
 
-// 287. Find the Duplicate Number (middle)
-var findDuplicate = function (nums) {
-  let newArr = [nums[0]];
-  for (let i = 1; i < nums.length; i++) {
-    if (newArr.includes(nums[i])) return nums[i];
-    else newArr.push(nums[i]);
-  }
-};
-
-// ===============================================
-
-// 2696. Minimum String Length After Removing Substrings(easy)
-
-var minLength = function (s) {
-  let len = s.length;
-  while (s.includes("AB") || s.includes("CD")) {
-    if (s.includes("AB")) s = s.replaceAll("AB", "");
-    if (s.includes("CD")) s = s.replaceAll("CD", "");
-  }
-  return s.length;
-};
 
 //7. Reverse Integer
 
