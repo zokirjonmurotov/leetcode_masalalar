@@ -7,3 +7,4 @@ var minLength = function (s) {
     }
     return s.length;
   };
+  

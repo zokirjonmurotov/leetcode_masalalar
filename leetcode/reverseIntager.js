@@ -4,7 +4,6 @@ function reverseInt(x) {
     let newX = String(x);
     let a = "";
     if (x < 0) a = a.replace("-", "");
-  
     for (let i = newX.length - 1; i >= 0; i--) {
       a += newX[i];
     }
